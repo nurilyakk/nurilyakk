@@ -1,0 +1,38 @@
+@import "./vars";
+
+.header {
+
+     padding: 16px 0;
+     
+    &__logo {
+        display: inline-block;
+        max-width: 255px;
+    }
+
+    &__nav-togler {
+        padding-top: 8px;
+        border: 1px solid $accent;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        svg {
+            fill: $accent;
+        }
+    }
+
+    &__logo-img {
+        max-width: 100%;
+    }
+
+    &__nav-item + &__nav-item {
+        margin-left: 40px;
+    }
+
+    &__nav-link {
+        color: $accent;
+    }
+
+
+}
